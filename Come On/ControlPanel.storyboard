@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Control Panel View Controller-->
+        <scene sceneID="HAw-mP-nfc">
+            <objects>
+                <viewController storyboardIdentifier="ControlPanelViewControllerId" id="uID-RK-Q2k" customClass="ControlPanelViewController" customModule="Come_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LHV-xx-cd6"/>
+                        <viewControllerLayoutGuide type="bottom" id="qoh-XO-NaZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EEI-l1-lee">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5L-Sh-8BR">
+                                <rect key="frame" x="150" y="145" width="300" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c5L-Sh-8BR" secondAttribute="height" multiplier="28:29" id="bvK-Dr-mCw"/>
+                                </constraints>
+                                <state key="normal" image="ComeOnLogo"/>
+                                <connections>
+                                    <action selector="logOut:" destination="uID-RK-Q2k" eventType="touchUpInside" id="qYT-Xh-r0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYM-ra-RHC">
+                                <rect key="frame" x="265" y="464" width="70" height="30"/>
+                                <state key="normal" title="Mon profil"/>
+                                <connections>
+                                    <action selector="goToMyProfile:" destination="uID-RK-Q2k" eventType="touchUpInside" id="61w-np-zMA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.20392156859999999" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c5L-Sh-8BR" firstAttribute="centerY" secondItem="EEI-l1-lee" secondAttribute="centerY" id="0lb-d9-LW0"/>
+                            <constraint firstItem="IYM-ra-RHC" firstAttribute="top" secondItem="c5L-Sh-8BR" secondAttribute="bottom" constant="8" id="R97-2J-SUX"/>
+                            <constraint firstItem="c5L-Sh-8BR" firstAttribute="centerX" secondItem="EEI-l1-lee" secondAttribute="centerX" id="b42-rQ-LlA"/>
+                            <constraint firstItem="c5L-Sh-8BR" firstAttribute="width" secondItem="EEI-l1-lee" secondAttribute="width" multiplier="1/2" id="mkY-xO-dFg"/>
+                            <constraint firstItem="IYM-ra-RHC" firstAttribute="centerX" secondItem="EEI-l1-lee" secondAttribute="centerX" id="zOR-Gt-CbA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLT-Sq-ehs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComeOnLogo" width="84" height="87"/>
+    </resources>
+</document>

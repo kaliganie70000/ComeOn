@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContactsTableViewHeader" customModule="Come_On">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lB-jY-R4L">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdw-jL-1EI" customClass="BEMCheckBox">
+                            <rect key="frame" x="553" y="16" width="27" height="27"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vdw-jL-1EI" secondAttribute="height" multiplier="1:1" id="GpR-Ud-Cih"/>
+                                <constraint firstAttribute="height" constant="27" id="wDd-YT-JE9"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideBox" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6C-E6-fRz" userLabel="Upper Check Box">
+                            <rect key="frame" x="553" y="16" width="27" height="27"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comeon_profile" translatesAutoresizingMaskIntoConstraints="NO" id="0ka-oT-WO9">
+                            <rect key="frame" x="20" y="8" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="MUO-Nq-bZD"/>
+                                <constraint firstAttribute="height" constant="44" id="Sh7-W0-qU5"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_keyboard_arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="oPr-pw-wF3">
+                            <rect key="frame" x="83" y="18" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="FZ5-49-ZBA"/>
+                                <constraint firstAttribute="width" constant="24" id="mGw-ZH-qAf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woh-v0-hTX">
+                            <rect key="frame" x="115" y="20.5" width="430" height="19"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0ka-oT-WO9" firstAttribute="leading" secondItem="1lB-jY-R4L" secondAttribute="leading" constant="20" id="8id-vY-N4m"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="height" secondItem="vdw-jL-1EI" secondAttribute="height" id="AI1-ZN-k1H"/>
+                        <constraint firstItem="0ka-oT-WO9" firstAttribute="centerY" secondItem="1lB-jY-R4L" secondAttribute="centerY" id="DaS-gL-sMc"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="centerX" secondItem="vdw-jL-1EI" secondAttribute="centerX" id="Iwl-M2-QwO"/>
+                        <constraint firstItem="vdw-jL-1EI" firstAttribute="centerY" secondItem="1lB-jY-R4L" secondAttribute="centerY" id="L9N-td-YhG"/>
+                        <constraint firstAttribute="trailing" secondItem="vdw-jL-1EI" secondAttribute="trailing" constant="20" symbolic="YES" id="M8S-eh-ksb"/>
+                        <constraint firstItem="woh-v0-hTX" firstAttribute="leading" secondItem="1lB-jY-R4L" secondAttribute="leading" constant="8" id="QR2-xt-TCS"/>
+                        <constraint firstItem="woh-v0-hTX" firstAttribute="centerY" secondItem="1lB-jY-R4L" secondAttribute="centerY" id="WAE-SO-kMM"/>
+                        <constraint firstItem="oPr-pw-wF3" firstAttribute="leading" secondItem="0ka-oT-WO9" secondAttribute="trailing" constant="19" id="Ygt-ef-saZ"/>
+                        <constraint firstAttribute="trailing" secondItem="woh-v0-hTX" secondAttribute="trailing" constant="55" id="bva-qE-24b"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="leading" secondItem="woh-v0-hTX" secondAttribute="trailing" constant="8" id="i7X-UK-b0Z"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="leading" secondItem="woh-v0-hTX" secondAttribute="trailing" constant="8" symbolic="YES" id="kZs-a3-ut2"/>
+                        <constraint firstItem="oPr-pw-wF3" firstAttribute="centerY" secondItem="1lB-jY-R4L" secondAttribute="centerY" id="ojh-Qh-5yW"/>
+                        <constraint firstItem="woh-v0-hTX" firstAttribute="leading" secondItem="oPr-pw-wF3" secondAttribute="trailing" constant="8" id="qi9-n6-pnL"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="width" secondItem="vdw-jL-1EI" secondAttribute="width" id="rns-TJ-9PR"/>
+                        <constraint firstItem="q6C-E6-fRz" firstAttribute="centerY" secondItem="vdw-jL-1EI" secondAttribute="centerY" id="xbK-NV-ZwT"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QR2-xt-TCS"/>
+                            <exclude reference="i7X-UK-b0Z"/>
+                            <exclude reference="kZs-a3-ut2"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1lB-jY-R4L" secondAttribute="trailing" id="VLF-HF-VUV"/>
+                <constraint firstItem="1lB-jY-R4L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zkk-Zf-lqF"/>
+                <constraint firstItem="1lB-jY-R4L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d5w-v4-eoA"/>
+                <constraint firstAttribute="bottom" secondItem="1lB-jY-R4L" secondAttribute="bottom" id="hES-l1-Pte"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="accessor" destination="oPr-pw-wF3" id="5Je-tT-fAe"/>
+                <outlet property="checkbox" destination="vdw-jL-1EI" id="OMj-7K-l52"/>
+                <outlet property="constraintDetailsRight" destination="bva-qE-24b" id="PiE-c6-VO9"/>
+                <outlet property="label" destination="woh-v0-hTX" id="ryr-mz-LR9"/>
+                <outlet property="picture" destination="0ka-oT-WO9" id="0Q6-DE-ocT"/>
+            </connections>
+            <point key="canvasLocation" x="383" y="468"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comeon_profile" width="128" height="118"/>
+        <image name="ic_keyboard_arrow_left" width="24" height="24"/>
+    </resources>
+</document>
